@@ -10,3 +10,4 @@ arithmaticOperation2=`awk "BEGIN {print $a * $b + $c}"`
 arithmaticOperation3=`awk "BEGIN {print $c + $a / $b}"`
 arithmaticOperation3=${arithmaticOperation3%.*}
 
+arithmaticOperation4=`awk "BEGIN {print $a % $b + $c}"`
