@@ -28,3 +28,7 @@ do
         arithmaticOperation_array[$counter]=${arithmaticOperation_dictonary[$key]}
         ((counter++))
 done
+
+descending_array=($(echo ${arithmaticOperation_array[@]}|tr " " "\n" |sort -nr))
+
+echo " Computation Result in Descending Order : ${descending_array[@]} "
