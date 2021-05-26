@@ -30,5 +30,9 @@ do
 done
 
 descending_array=($(echo ${arithmaticOperation_array[@]}|tr " " "\n" |sort -nr))
+ascending_array=($(echo ${arithmaticOperation_array[@]}|tr " " "\n" |sort -n))
 
-echo " Computation Result in Descending Order : ${descending_array[@]} "
+echo " Computation Result in Descending Order ${descending_array[@]} "
+
+echo " Computation Result in Ascending Order : ${ascending_array[@]} "
+
